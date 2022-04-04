@@ -9,7 +9,7 @@ class Event {
     /**
      * @param $name
      * @param $argument
-     * @TODO This can be improved by not being static and and using a singleton instead of new ConsoleOutput
+     * @TODO This can be improved by not being static and using a singleton instead of new ConsoleOutput
      */
     public static function trigger($name, $argument = null) {
         if(isset(self::$events[$name])) {
